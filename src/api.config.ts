@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:3000";
+export const API_URL = "auth-server-production-2f1e.up.railway.app";
 export const ENDPOINTS = {
   SIGNIN: "/auth/signin",
   SIGNUP: "/auth/signup",
