@@ -17,8 +17,8 @@ const Row = ({ user, handleSelect }: rowPropsInterface): ReactElement => {
       <td>{user.id}</td>
       <td>{user.name}</td>
       <td>{user.email}</td>
-      <td>{formatTime(user.createdAt)}</td>
       <td>{formatTime(user.loggedAt)}</td>
+      <td>{formatTime(user.createdAt)}</td>
       <td style={{ width: "10rem" }}>
         {user.blocked ? (
           <span className="text-danger">Blocked</span>
