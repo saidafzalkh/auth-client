@@ -1,4 +1,4 @@
-export const API_URL = "auth-server-production-2f1e.up.railway.app";
+export const API_URL = "https://auth-server-production-6244.up.railway.app";
 export const ENDPOINTS = {
   SIGNIN: "/auth/signin",
   SIGNUP: "/auth/signup",
