@@ -15,7 +15,7 @@ export const useToggle = (type: "block" | "unblock") => {
   const toggleUsers = async (dto: { users: number[] }) => {
     if (dto.users.includes(userID)) {
       localStorage.clear();
-      navigateTo("/signin");
+      type === "block" && navigateTo("/signin");
     }
     return await axios.put(api, dto, {
       headers: { Authorization: `Bearer ${token}` },
